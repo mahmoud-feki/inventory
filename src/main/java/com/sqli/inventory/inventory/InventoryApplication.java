@@ -17,7 +17,6 @@ public class InventoryApplication {
 
 //    @Value("${env.profil}")
 //    private String profil ; 
-    
     public static void main(String[] args) {
         SpringApplication.run(InventoryApplication.class, args);
     }
@@ -27,13 +26,13 @@ public class InventoryApplication {
 
         List<Data> datas = new ArrayList<>();
         Data d1 = new Data("001", 10);
-        
+
         //    d1.setProfil(profil);
-        
         Data d2 = new Data("002", 15);
+        Data d3 = new Data("003", 15);
         datas.add(d1);
         datas.add(d2);
-
+        datas.add(d3);
         return datas;
 
     }
@@ -56,7 +55,7 @@ public class InventoryApplication {
 
         private String id;
         private Integer quantity;
-        private String profil ; 
+        private String profil;
 
         public String getProfil() {
             return profil;
@@ -66,8 +65,6 @@ public class InventoryApplication {
             this.profil = profil;
         }
 
-        
-        
         public String getId() {
             return id;
         }
