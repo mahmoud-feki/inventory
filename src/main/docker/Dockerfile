@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 
-ADD /var/lib/jenkins/workspace/Docker-pipeline/target/*.jar app.jar
+ADD ./target/inventory-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
