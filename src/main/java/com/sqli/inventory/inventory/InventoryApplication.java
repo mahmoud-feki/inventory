@@ -21,6 +21,12 @@ public class InventoryApplication {
         SpringApplication.run(InventoryApplication.class, args);
     }
 
+    
+    @GetMapping
+    public String whichPods(){
+        return String.format("%s", System.getenv().getOrDefault("HOSTNAME", "localhost"));
+    }
+    
     @GetMapping("/all")
     public List<Data> getAllData() {
 
