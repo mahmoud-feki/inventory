@@ -29,7 +29,7 @@ public class InventoryApplication {
 
         //    d1.setProfil(profil);
         Data d2 = new Data("002", 15);
-        Data d3 = new Data("003", 15);
+        Data d3 = new Data("004", 15);
         datas.add(d1);
         datas.add(d2);
         datas.add(d3);
